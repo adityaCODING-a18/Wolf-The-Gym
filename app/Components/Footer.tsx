@@ -475,7 +475,7 @@ export default function Footer() {
 
             Crafted with
             <span className="mx-2 text-white">♥</span>
-            by WOLF THE GYM
+            by ADITYA RAJ
 
           </p>
 
