@@ -48,7 +48,7 @@ const buttons = [
 
 export default function AdvancedCards() {
     return (
-        <section className="bg-black py-14 sm:py-20 lg:py-28">
+        <section id="features-cards" className="bg-black py-14 sm:py-20 lg:py-28">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 {/* Heading */}
                 <div className="mb-14 text-center">

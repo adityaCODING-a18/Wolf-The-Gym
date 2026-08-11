@@ -7,16 +7,23 @@ import { useState } from "react";
 
 const navItems = [
     { name: "Home", href: "#home" },
-    { name: "About", href: "#services" },
-    { name: "Gallery", href: "#gym-interior" },
-    { name: "Trainers Community", href: "/trainers" },
+    { name: "Trainers Profile", href: "#trainers-InstagramProfile" },
     { name: "Gym Interior", href: "/gymInterior" },
-    { name: "Gym Founder", href: "#founder" },
-    { name: "Contact", href: "#find-us" },
+    { name: "Gym Founder", href: "/founder" },
+    { name: "Contact", href: "#footer" },
 ];
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
+     const handleJoin = () => {
+        const phone = "919386868111";
+        const message = "Hi, I want to join! WOLF THE GYM";
+
+        window.open(
+            `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+            "_blank"
+        );
+    };
 
     return (
         <header className="fixed top-0 left-0 z-50 w-full px-3 sm:px-5 pt-3 sm:pt-5">
@@ -59,6 +66,7 @@ export default function Navbar() {
 
                     {/* Desktop Button */}
                     <button
+                        onClick={handleJoin}
                         className="
                             hidden lg:block
                             relative
@@ -131,7 +139,7 @@ export default function Navbar() {
                         ))}
 
                         <div className="p-5">
-                            <button className="w-full rounded-full bg-white py-3 font-semibold text-black transition hover:bg-gray-200">
+                            <button onClick={handleJoin} className="w-full rounded-full bg-white py-3 font-semibold text-black transition hover:bg-gray-200">
                                 Join Now
                             </button>
                         </div>

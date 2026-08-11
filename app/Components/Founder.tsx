@@ -19,7 +19,7 @@ export default function Founder() {
 
         <motion.div
           initial={{ opacity: 0, x: -70 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: .8 }}
           className="order-2 lg:order-1"

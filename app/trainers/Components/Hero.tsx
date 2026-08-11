@@ -54,7 +54,7 @@ export default function Hero() {
                 preload="auto"
                 className="absolute inset-0 h-full w-full object-cover"
             >
-                <source src="/hero.mp4" type="video/mp4" />
+                <source src="https://ik.imagekit.io/hvsvyculi/hero.mp4" type="video/mp4" />
             </video>
 
             {/* Dark Overlay */}

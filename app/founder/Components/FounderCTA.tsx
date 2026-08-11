@@ -57,7 +57,7 @@ export default function FounderCTA() {
                             </a>
 
                             <a
-                                href="https://instagram.com/yourusername"
+                                href="https://www.instagram.com/_wolf_2.o?igsh=MXAzdGg4b280bXNpYQ%3D%3D&utm_source=qr"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group flex items-center justify-center rounded-2xl border border-white/15 bg-white/[0.03] px-8 py-5 font-semibold text-white backdrop-blur-xl transition-all duration-300 hover:bg-white/10"

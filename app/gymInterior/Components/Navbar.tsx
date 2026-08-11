@@ -7,10 +7,10 @@ import { useState } from "react";
 
 const navItems = [
     { name: "Home", href: "#home" },
-    { name: "About", href: "#services" },
+    { name: "Features", href: "#features-cards" },
     { name: "Gallery", href: "#gym-interior" },
     { name: "Trainers", href: "/trainers" },
-    { name: "Contact", href: "#find-us" },
+    { name: "Contact", href: "#footer" },
 ];
 
 export default function Navbar() {

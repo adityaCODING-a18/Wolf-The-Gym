@@ -36,7 +36,7 @@ export default function Hero() {
         <section id="hero" className="relative min-h-screen w-full overflow-hidden">
             {/* Background Video */}
             <Image
-                src="/gym_view/virtual tour.webp"
+                src="https://ik.imagekit.io/hvsvyculi/virtual%20tour.webp"
                 alt="Virtual Tour"
                 fill
                 // width={1000}

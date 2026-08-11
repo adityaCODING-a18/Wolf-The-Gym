@@ -4,12 +4,9 @@ import ReelCard from "./ReelCard";
 
 
 const videoUrls = [
-    "/gym edit one.mp4",
-    "/gym edit two.mp4",
-    "/gym edit one.mp4",
-    "/gym edit two.mp4",
-    "/gym edit one.mp4",
-    "/gym edit two.mp4",
+    "https://ik.imagekit.io/hvsvyculi/Video-85948.mp4",
+    "https://ik.imagekit.io/hvsvyculi/Video-50267.mp4",
+    "https://ik.imagekit.io/hvsvyculi/Video-65197.mp4",
 ];
 
 export default function Reels() {
@@ -57,6 +54,7 @@ export default function Reels() {
 
                 <div className="mt-10 flex justify-center">
                     <button
+                        onClick={()=>{ window.open("/trainers", "_self")} }
                         className="
                             relative
                             inline-flex

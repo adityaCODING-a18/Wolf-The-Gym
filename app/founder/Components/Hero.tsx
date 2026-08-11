@@ -83,7 +83,7 @@ export default function Hero() {
 
                             {/* Instagram Card */}
                             <a
-                                href="https://instagram.com/yourusername"
+                                href="https://www.instagram.com/_sanju_yadvesh?igsh=M2J4b3VxdmExdWEz&utm_source=qr"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group mt-10 flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition-all duration-300 hover:bg-white/[0.08]"
@@ -92,7 +92,7 @@ export default function Hero() {
                                 <div className="flex items-center gap-4">
 
                                     <Image
-                                        src="/founder.webp"
+                                        src="https://ik.imagekit.io/hvsvyculi/WhatsApp%20Image%202026-08-11%20at%2006.28.24.jpeg"
                                         alt="Founder"
                                         width={60}
                                         height={60}
@@ -102,11 +102,11 @@ export default function Hero() {
                                     <div>
 
                                         <p className="font-semibold">
-                                            @wolfthegym
+                                            @satyendra_fit_coach
                                         </p>
 
                                         <p className="text-sm text-zinc-500">
-                                            Wolf The Gym
+                                            Satyendra | Ftiness Coach | Weight Loss | Trainer
                                         </p>
 
                                     </div>
@@ -170,7 +170,7 @@ export default function Hero() {
                             <div className="mt-12">
 
                                 <a
-                                    href="https://instagram.com/yourusername"
+                                    href="https://www.instagram.com/_wolf_2.o?igsh=MXAzdGg4b280bXNpYQ%3D%3D&utm_source=qr"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="group inline-flex items-center gap-4 rounded-full border border-white px-8 py-4 font-medium transition-all duration-300 hover:bg-white hover:text-black"

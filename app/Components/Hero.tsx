@@ -42,6 +42,16 @@ export default function Hero() {
         setIndex(selectedWord());
     }, []);
 
+     const handleJoin = () => {
+        const phone = "919386868111";
+        const message = "Hi, I want to join! WOLF THE GYM";
+
+        window.open(
+            `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+            "_blank"
+        );
+    };
+
     return (
         <section id="hero" className="relative min-h-screen w-full overflow-hidden">
             {/* Background Video */}
@@ -53,7 +63,7 @@ export default function Hero() {
                 preload="auto"
                 className="absolute inset-0 h-full w-full object-cover"
             >
-                <source src="/hero.mp4" type="video/mp4" />
+                <source src="https://ik.imagekit.io/hvsvyculi/hero.mp4" type="video/mp4" />
             </video>
 
             {/* Dark Overlay */}
@@ -140,6 +150,7 @@ export default function Hero() {
 
                 {/* CTA */}
                 <button
+                    onClick={handleJoin}
                     className="
                 relative
                 mt-4

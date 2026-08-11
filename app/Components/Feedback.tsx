@@ -7,43 +7,27 @@ import Image from "next/image";
 
 const reviews = [
   {
-    name: "Aditya Kumar",
-    duration: "8 Months Member",
-    image: "/reviews/1.jpg",
+    name: "Nikhil Raj",
+    image: "https://ik.imagekit.io/hvsvyculi/1.png",
     review:
-      "Joining WOLF THE GYM completely transformed my lifestyle. The trainers genuinely care, the equipment is world-class and the atmosphere keeps me motivated every single day.",
+      `I’ve been working out at Wolf Gym for a while now, and honestly, it’s been a really good experience. The trainers are friendly and actually pay attention, which makes a big difference. They guide you properly instead of just leaving you on your own.
+The equipment is in good condition and you don’t have to wait much, even during busy hours. The overall vibe is also nice—people here are focused but not intimidating, so it feels comfortable even if you’re just starting out.
+One thing I appreciate is the cleanliness. It’s well-maintained compared to many other gyms I’ve seen.
+Overall, I’d say Wolf Gym is easily one of the best gyms in the city. If you’re serious about fitness or just want a good place to start, this is a solid choice.`,
     rating: 5,
   },
   {
-    name: "Rahul Singh",
-    duration: "1 Year Member",
-    image: "/reviews/2.jpg",
-    review:
-      "I've trained in many gyms but nothing compares to WOLF. Everything feels premium, from the machines to the cleanliness and community.",
+    name: "Utkarsh Kumar",
+    image: "https://ik.imagekit.io/hvsvyculi/2.png",
+    review: `I’ve been training at wolf the gym for about 1 year and it’s easily one of the best fitness centers in the area. The facility is always clean, and they have a great range of equipment—from heavy lifting racks to plenty of cardio machines, so I never have to wait long.
+​What really sets them apart is the staff. The trainers are knowledgeable and actually take the time to correct your form. The atmosphere is super motivating and inclusive. Highly recommend if you’re serious about your goals!"`,
     rating: 5,
   },
   {
-    name: "Ayush Raj",
-    duration: "10 Months Member",
-    image: "/reviews/3.jpg",
-    review:
-      "The trainers push you without making you feel overwhelmed. Every workout feels productive and enjoyable.",
-    rating: 5,
-  },
-  {
-    name: "Priyanshu",
-    duration: "6 Months Member",
-    image: "/reviews/4.jpg",
-    review:
-      "A luxury gym with an amazing vibe. You actually look forward to working out every day.",
-    rating: 5,
-  },
-  {
-    name: "Siddharth",
-    duration: "1 Year Member",
-    image: "/reviews/5.jpg",
-    review:
-      "I've trained in many gyms but nothing compares to WOLF. Everything feels premium, from the machines to the cleanliness and community.",
+    name: "Anirudh Saha",
+    image: "https://ik.imagekit.io/hvsvyculi/3.png",
+    review: `I’ve been training here for some time and it’s a really good gym. The equipment is well maintained and the place is always clean. One thing I really appreciate is the owner’s nature Mr.Sanju yadav — he’s very friendly, helpful, and makes everyone feel comfortable. It creates a positive and motivating environment to work out.”
+Best gym in jehanabad`,
     rating: 5,
   }
 ];
@@ -256,10 +240,6 @@ export default function Feedback() {
                       <h3 className="text-xl font-bold text-white">
                         {reviews[current].name}
                       </h3>
-
-                      <p className="text-neutral-400">
-                        {reviews[current].duration}
-                      </p>
 
                     </div>
 

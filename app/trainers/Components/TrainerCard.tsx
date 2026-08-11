@@ -189,7 +189,7 @@ export default function TrainerCard({
             </button>
 
             <div className="absolute bottom-5 left-5 rounded-full bg-black/60 px-4 py-2 text-white backdrop-blur-xl">
-              {trainer.followers} followers • {trainer.posts} posts
+              {trainer.followers}+ followers • {trainer.posts}+ posts
             </div>
           </div>
         </div>

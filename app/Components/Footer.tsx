@@ -144,7 +144,7 @@ function Social({
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-black">
+    <footer id="footer" className="relative overflow-hidden bg-black">
 
       {/* Top Divider */}
 
@@ -332,13 +332,13 @@ export default function Footer() {
               <Info
                 icon={<Phone size={18} />}
                 title="Call Us"
-                value="+91 79474 33813"
+                value="+91 94312 58129"
               />
 
               <Info
                 icon={<Mail size={18} />}
                 title="Email"
-                value="wolfthegym@gmail.com"
+                value="wolfthegym2.o@gmail.com"
               />
 
               <Info

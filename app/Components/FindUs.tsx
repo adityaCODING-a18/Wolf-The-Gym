@@ -133,12 +133,12 @@ export default function FindUs() {
             <div className="mt-12 flex gap-4">
 
               <Social
-                href="https://instagram.com"
+                href="https://www.instagram.com/_wolf_2.o?igsh=MXAzdGg4b280bXNpYQ%3D%3D&utm_source=qr"
                 icon={<FaInstagram size={22} />}
               />
 
               <Social
-                href="https://facebook.com"
+                href="https://www.facebook.com/pages/The%20Wolf%20Gym%20Jehanabad/100813128796169"
                 icon={<FaFacebookF size={22} />}
               />
 

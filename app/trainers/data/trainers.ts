@@ -4,21 +4,21 @@ import { Trainer } from "../types/trainer";
 export const trainers: Trainer[] = [
   {
     id: 1,
-    name: "SANU",
-    username: "anu_rev_125",
+    name: "SANJU_YADAV",
+    username: "_sanju_yadvesh",
     role: "Nutrition and Exercise Expert",
 
-    bio: "Sanu takes the nutrition and exercise expert spot with a motivation-heavy reel that fits exercise planning, conditioning support and practical nutrition guidance.",
+    bio: "Sanju takes the nutrition and exercise expert spot with a motivation-heavy reel that fits exercise planning, conditioning support and practical nutrition guidance.",
 
     avatar: "/trainers/sanu.jpg",
 
     reel: "gym edit one.mp4",
 
-    instagram: "https://instagram.com/anu_rev_125",
+    instagram: "https://www.instagram.com/_sanju_yadvesh?igsh=M2J4b3VxdmExdWEz&utm_source=qr",
 
-    followers: 42,
+    followers: 550,
 
-    posts: 3,
+    posts: 45,
 
     featuredText:
       "Staying locked in with a gym-edit style motivation push and a sharper training plan.",

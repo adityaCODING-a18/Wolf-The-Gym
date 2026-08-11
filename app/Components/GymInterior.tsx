@@ -6,14 +6,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import { X, ZoomIn } from "lucide-react";
 
 const images = [
-    { src: "/gym_view/2.jpeg", title: "Luxury Interior", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/1.jpeg", title: "Premium Equipment", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/3.jpeg", title: "Strength Zone", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/4.jpeg", title: "Reception", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/5.jpeg", title: "Cardio Floor", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/6.jpeg", title: "Functional Area", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/4.jpeg", title: "Recovery Zone", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/1.jpeg", title: "Elite Machines", caption: "The caption defines something about the pic." },
+    { src: "https://ik.imagekit.io/hvsvyculi/IMG_3372.HEIC", title: "Cardio Zone", caption: "Automatic Treadmill for better cardio." },
+    { src: "https://ik.imagekit.io/hvsvyculi/IMG_3370.HEIC", title: "Cardio Zone", caption: "Cycling Machine brought for you to make cardio fun." },
+    { src: "https://ik.imagekit.io/hvsvyculi/IMG_3374.HEIC", title: "Strength Zone", caption: "Lat Pull Down Machine for your back muscles." },
+    { src: "https://ik.imagekit.io/hvsvyculi/IMG_3375.HEIC", title: "Strength Zone", caption: "Supported Deadlift Machine for your legs and abs machines." },
+    { src: "https://ik.imagekit.io/hvsvyculi/IMG_3376.HEIC", title: "Strength Zone", caption: "Strength Training Machines for your arms and abs hanging raises with punching bag."},
+    // { src: "/gym_view/6.jpeg", title: "Functional Area", caption: "The caption defines something about the pic." },
+    // { src: "/gym_view/4.jpeg", title: "Recovery Zone", caption: "The caption defines something about the pic." },
+    // { src: "/gym_view/1.jpeg", title: "Elite Machines", caption: "The caption defines something about the pic." },
 ];
 
 export default function GymInterior() {
@@ -102,7 +102,7 @@ export default function GymInterior() {
 
                     {/* ROW 3 */}
 
-                    <div className="mt-5 grid gap-5 lg:grid-cols-[2fr_1fr]">
+                    {/* <div className="mt-5 grid gap-5 lg:grid-cols-[2fr_1fr]">
                         <GalleryCard
                             image={images[5]}
                             height="h-[340px] sm:h-[480px] lg:h-[650px]"
@@ -121,7 +121,7 @@ export default function GymInterior() {
                             height="h-[260px] sm:h-[340px] lg:h-[650px]"
                             onClick={setSelected}
                         />
-                    </div>
+                    </div> */}
 
                 </div>
             </section>
@@ -170,6 +170,7 @@ export default function GymInterior() {
             </AnimatePresence>
             <div className="flex justify-center">
                 <button
+                    onClick={()=>{window.open("/gymInterior", "_self")}}
                     className="
                             relative
                             inline-flex

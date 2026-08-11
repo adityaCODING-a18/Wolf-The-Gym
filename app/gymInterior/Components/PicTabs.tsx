@@ -6,14 +6,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import { X, ZoomIn } from "lucide-react";
 
 const images = [
-    { src: "/gym_view/2.jpeg", title: "Luxury Interior", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/1.jpeg", title: "Premium Equipment", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/3.jpeg", title: "Strength Zone", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/4.jpeg", title: "Reception", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/5.jpeg", title: "Cardio Floor", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/6.jpeg", title: "Functional Area", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/4.jpeg", title: "Recovery Zone", caption: "The caption defines something about the pic." },
-    { src: "/gym_view/1.jpeg", title: "Elite Machines", caption: "The caption defines something about the pic." },
+    { src: "https://ik.imagekit.io/hvsvyculi/IMG_3372.HEIC", title: "Cardio Zone", caption: "Automatic Treadmill for better cardio." },
+    { src: "https://ik.imagekit.io/hvsvyculi/IMG_3370.HEIC", title: "Cardio Zone", caption: "Cycling Machine brought for you to make cardio fun." },
+    { src: "https://ik.imagekit.io/hvsvyculi/IMG_3374.HEIC", title: "Strength Zone", caption: "Lat Pull Down Machine for your back muscles." },
+    { src: "https://ik.imagekit.io/hvsvyculi/IMG_3375.HEIC", title: "Strength Zone", caption: "Supported Deadlift Machine for your legs and abs machines." },
+    { src: "https://ik.imagekit.io/hvsvyculi/IMG_3376.HEIC", title: "Strength Zone", caption: "Strength Training Machines for your arms and abs hanging raises with punching bag."},
+    // { src: "/gym_view/6.jpeg", title: "Functional Area", caption: "The caption defines something about the pic." },
+    // { src: "/gym_view/4.jpeg", title: "Recovery Zone", caption: "The caption defines something about the pic." },
+    // { src: "/gym_view/1.jpeg", title: "Elite Machines", caption: "The caption defines something about the pic." },
 ];
 
 export default function GymInterior() {
@@ -102,7 +102,7 @@ export default function GymInterior() {
 
                     {/* ROW 3 */}
 
-                    <div className="mt-5 grid gap-5 lg:grid-cols-[2fr_1fr]">
+                    {/* <div className="mt-5 grid gap-5 lg:grid-cols-[2fr_1fr]">
                         <GalleryCard
                             image={images[5]}
                             height="h-[340px] sm:h-[480px] lg:h-[650px]"
@@ -121,7 +121,7 @@ export default function GymInterior() {
                             height="h-[260px] sm:h-[340px] lg:h-[650px]"
                             onClick={setSelected}
                         />
-                    </div>
+                    </div> */}
 
                 </div>
             </section>
@@ -168,63 +168,7 @@ export default function GymInterior() {
                 )}
 
             </AnimatePresence>
-            <div className="flex justify-center">
-                <button
-                    className="
-                            relative
-                            inline-flex
-                            items-center
-                            justify-center
-                            overflow-hidden
-                            rounded-full
-
-                            border border-white/20
-
-                            bg-gradient-to-r
-                            from-black
-                            via-neutral-900
-                            to-zinc-800
-
-                            px-6
-                            py-3
-
-                            text-base
-                            font-semibold
-                            tracking-wide
-                            text-white
-
-                            shadow-[0_0_15px_rgba(255,255,255,0.18)]
-
-                            transition-all
-                            duration-500
-
-                            hover:-translate-y-1
-                            hover:scale-105
-                            hover:border-white/60
-                            hover:shadow-[0_0_15px_rgba(255,255,255,0.45),0_0_40px_rgba(255,255,255,0.25)]
-
-                            active:scale-95
-
-                            before:absolute
-                            before:inset-0
-                            before:-translate-x-full
-                            before:bg-gradient-to-r
-                            before:from-transparent
-                            before:via-white/25
-                            before:to-transparent
-                            before:transition-transform
-                            before:duration-700
-                            hover:before:translate-x-full
-
-                            sm:px-8
-                            sm:py-4
-                            sm:text-lg
-                    ">
-                    <span className="relative z-10">
-                        EXPLORE WOLF GYM INTERIOR
-                    </span>
-                </button>
-            </div>
+            
         </>
     );
 }
