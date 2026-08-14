@@ -306,13 +306,13 @@ export default function Footer() {
 
               <FooterLink href="/founder">Founder</FooterLink>
 
-              <FooterLink href="/membership">
+              {/* <FooterLink href="/membership">
                 Membership
               </FooterLink>
 
               <FooterLink href="/contact">
                 Contact
-              </FooterLink>
+              </FooterLink> */}
 
             </div>
 
@@ -475,7 +475,10 @@ export default function Footer() {
 
             Crafted with
             <span className="mx-2 text-white">♥</span>
-            by ADITYA RAJ
+            by &nbsp;
+            <Link href="https://www.instagram.com/aditya.raj_official_/" target="_blank" className="text-white">
+            ADITYA RAJ
+            </Link>
 
           </p>
 

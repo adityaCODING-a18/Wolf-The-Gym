@@ -21,8 +21,11 @@ export default function CardGroup() {
                 </p>
 
             </div>
+            <p className="mx-auto mt-6 max-w-2xl text-neutral-400">
+                    Info about our trainers will be added very soon. we are working on that.
+            </p>
             <TrainerCard key={trainers[0].id} trainer={trainers[0]} />
-            <TrainerCard key={trainers[1].id} trainer={trainers[1]} />
+            {/* <TrainerCard key={trainers[1].id} trainer={trainers[1]} /> */}
         </section>
     )
 }
