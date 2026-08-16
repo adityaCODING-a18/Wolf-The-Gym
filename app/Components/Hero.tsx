@@ -118,6 +118,21 @@ export default function Hero() {
                 text-xl
                 font-bold
                 leading-tight
+                text-white/30
+
+                sm:text-2xl
+                md:text-3xl
+                lg:text-4xl
+            "
+                >
+                    THE BIGGEST GYM IN JEHANABAD
+                </h2>
+                <h2
+                    className="
+                max-w-4xl
+                text-xl
+                font-bold
+                leading-tight
                 text-white
 
                 sm:text-2xl

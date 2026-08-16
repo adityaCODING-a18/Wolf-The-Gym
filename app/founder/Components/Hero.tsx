@@ -83,7 +83,7 @@ export default function Hero() {
 
                             {/* Instagram Card */}
                             <a
-                                href="https://www.instagram.com/_sanju_yadvesh?igsh=M2J4b3VxdmExdWEz&utm_source=qr"
+                                href="https://www.instagram.com/satyendra_fit_coach_?igsh=MWZnZjU4ZXQ2eXkzaA==&igsi=MWZnZjU4ZXQ2eXkzaA=="
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group mt-10 flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition-all duration-300 hover:bg-white/[0.08]"

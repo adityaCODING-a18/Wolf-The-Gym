@@ -4,6 +4,7 @@ import ReelCard from "./ReelCard";
 
 
 const videoUrls = [
+    "https://ik.imagekit.io/hvsvyculi/WhatsApp%20Video%202026-08-14%20at%2012.40.58.mp4",
     "https://ik.imagekit.io/hvsvyculi/Video-85948.mp4",
     "https://ik.imagekit.io/hvsvyculi/Video-50267.mp4",
     "https://ik.imagekit.io/hvsvyculi/Video-65197.mp4",
