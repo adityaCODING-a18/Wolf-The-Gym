@@ -12,6 +12,7 @@ import {
 import { FaInstagram, FaFacebookF } from "react-icons/fa6";
 
 export default function FindUs() {
+
   return (
     <section id="find-us" className="relative overflow-hidden bg-black px-5 py-24 sm:px-8 lg:px-12">
 
@@ -52,12 +53,12 @@ export default function FindUs() {
             className="overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl"
           >
 
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.584323696458!2d84.98562647483806!3d25.21723693088978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2b5f3ebca9f55%3A0xfd5f70d1a373eea3!2sWolf%20The%20Gym%20(%20The%20Biggest%20Gym%20Jehanabad%20)!5e0!3m2!1sen!2sin!4v1785225339750!5m2!1sen!2sin"
-                width="600" 
-                height="450" 
-                loading="lazy" 
-                className="h-[380px] w-full border-0 md:h-[520px]"
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.584323696458!2d84.98562647483806!3d25.21723693088978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2b5f3ebca9f55%3A0xfd5f70d1a373eea3!2sWolf%20The%20Gym%20(%20The%20Biggest%20Gym%20Jehanabad%20)!5e0!3m2!1sen!2sin!4v1785225339750!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              loading="lazy"
+              className="h-[380px] w-full border-0 md:h-[520px]"
             />
 
           </motion.div>
@@ -90,13 +91,13 @@ export default function FindUs() {
               <Info
                 icon={<Phone size={22} />}
                 title="Call Us"
-                value="+91 7947433813"
+                value="+91 9431258129"
               />
 
               <Info
                 icon={<Mail size={22} />}
                 title="Email"
-                value="wolfthegym@gmail.com"
+                value="wolfthegym2.o@gmail.com"
               />
 
             </div>
@@ -104,7 +105,7 @@ export default function FindUs() {
             {/* CTA */}
 
             <Link
-                href="https://maps.app.goo.gl/9J7856n71RNnBwfF8"
+              href="https://maps.app.goo.gl/9J7856n71RNnBwfF8"
               target="_blank"
               className="
               mt-10

@@ -18,6 +18,8 @@ function FooterLink({
   href: string;
   children: React.ReactNode;
 }) {
+
+
   return (
     <Link
       href={href}
@@ -143,6 +145,17 @@ function Social({
 }
 
 export default function Footer() {
+
+  const handleJoin = () => {
+    const phone = "919386868111";
+    const message = "Hi, I want to join! WOLF THE GYM";
+
+    window.open(
+      `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
+  };
+
   return (
     <footer id="footer" className="relative overflow-hidden bg-black">
 
@@ -216,8 +229,8 @@ export default function Footer() {
 
           </p>
 
-          <Link
-            href="/membership"
+          <button
+            onClick={handleJoin}
             className="
             group
             mt-10
@@ -248,7 +261,7 @@ export default function Footer() {
               className="transition-transform duration-300 group-hover:translate-x-1"
             />
 
-          </Link>
+          </button>
 
         </motion.div>
 
@@ -317,7 +330,7 @@ export default function Footer() {
             </div>
 
           </div>
-                    {/* Contact */}
+          {/* Contact */}
 
           <div>
 
@@ -477,7 +490,7 @@ export default function Footer() {
             <span className="mx-2 text-white">♥</span>
             by &nbsp;
             <Link href="https://www.instagram.com/aditya.raj_official_/" target="_blank" className="text-white">
-            ADITYA RAJ
+              ADITYA RAJ
             </Link>
 
           </p>
