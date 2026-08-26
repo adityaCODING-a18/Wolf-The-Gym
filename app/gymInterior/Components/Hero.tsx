@@ -3,6 +3,7 @@ import { ArrowDown } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Building } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const words = [
     {
@@ -21,6 +22,8 @@ const selectedWord = () => {
 }
 
 export default function Hero() {
+
+    const route = useRouter();
 
     const [index, setIndex] = useState({
         mainLine1: "STEP INSIDE",
@@ -108,7 +111,7 @@ export default function Hero() {
 
                     {/* CTA */}
                     <button
-                        onClick={() => { navigation.navigate("#gym-interior") }}
+                        onClick={() => { route.push("#gym-interior") }}
                         className="
                             group
                             relative
