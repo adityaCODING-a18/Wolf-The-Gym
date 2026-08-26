@@ -315,7 +315,7 @@ export default function Footer() {
 
               <FooterLink href="/">Home</FooterLink>
 
-              <FooterLink href="/about">About</FooterLink>
+              <FooterLink href="#services">About</FooterLink>
 
               <FooterLink href="/founder">Founder</FooterLink>
 
@@ -443,7 +443,7 @@ export default function Footer() {
 
           </p>
 
-          <div
+          {/* <div
             className="
             flex
             flex-wrap
@@ -482,7 +482,7 @@ export default function Footer() {
               Terms & Conditions
             </Link>
 
-          </div>
+          </div> */}
 
           <p className="text-center text-sm text-neutral-500 lg:text-right">
 
@@ -501,4 +501,4 @@ export default function Footer() {
 
     </footer>
   );
-}
+} 

@@ -108,6 +108,7 @@ export default function Hero() {
 
                     {/* CTA */}
                     <button
+                        onClick={() => { navigation.navigate("#gym-interior") }}
                         className="
                             group
                             relative

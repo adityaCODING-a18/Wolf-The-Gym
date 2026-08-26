@@ -63,7 +63,7 @@ export default function Hero() {
                 preload="auto"
                 className="absolute inset-0 h-full w-full object-cover"
             >
-                <source src="https://ik.imagekit.io/hvsvyculi/hero.mp4" type="video/mp4" />
+                <source src="hero.mp4" type="video/mp4" />
             </video>
 
             {/* Dark Overlay */}
@@ -104,8 +104,6 @@ export default function Hero() {
                 md:text-6xl
                 lg:text-7xl
                 xl:text-8xl
-
-
             "
                 >
                     WOLF THE GYM

@@ -12,163 +12,90 @@ type TrainerCardProps = {
 };
 
 export default function TrainerCard({
-    trainer,
+  trainer,
 }: TrainerCardProps) {
   return (
     <section
       className="
-      relative
-      overflow-hidden
-      rounded-[36px]
-      border border-white/10
-      bg-linear-to-br from-[#050505] via-[#0B0B0B] to-[#111111]
-      p-6
-      md:p-10
-      lg:p-12
-      shadow-[0_20px_100px_rgba(0,0,0,.5)]
+        relative
+        mx-auto
+        w-full
+        max-w-[95vw]
+        overflow-hidden
+        rounded-[24px]
+        border border-white/10
+        bg-linear-to-br from-[#050505] via-[#0B0B0B] to-[#111111]
+        p-4
+        shadow-[0_20px_100px_rgba(0,0,0,.5)]
+
+        sm:rounded-[30px]
+        sm:p-6
+
+        md:rounded-[36px]
+        md:p-10
+
+        lg:p-12
       "
     >
-      {/* background glow */}
+      {/* Background glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-0
+          h-56
+          w-56
+          rounded-full
+          bg-white/[0.03]
+          blur-[100px]
 
-      <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-white/[0.03] blur-[120px]" />
+          sm:h-72
+          sm:w-72
+          sm:blur-[120px]
+        "
+      />
 
       <div
         className="
-        relative
-        grid
-        gap-10
-        lg:grid-cols-[1.2fr_420px]
-        items-center
-      "
+          relative
+          grid
+          min-w-0
+          items-center
+          gap-8
+
+          lg:grid-cols-[1.2fr_420px]
+          lg:gap-10
+        "
       >
-        {/* LEFT */}
+        {/* RIGHT / VIDEO */}
 
-        <div className="order-2 lg:order-1">
-          <p className="text-zinc-300 text-sm font-semibold tracking-widest uppercase">
-            {trainer.role}
-          </p>
+        <div
+          className="
+            order-1
+            flex
+            min-w-0
+            justify-center
 
-          <div className="mt-5 flex items-center gap-4">
-            <Image
-              src={trainer.avatar}
-              width={84}
-              height={84}
-              alt={trainer.name}
-              className="rounded-3xl border border-white/10"
-            />
-
-            <div>
-              <h2 className="text-5xl font-black text-white">
-                {trainer.name}
-              </h2>
-
-              <p className="text-zinc-400">
-                @{trainer.username}
-              </p>
-            </div>
-          </div>
-
-          <p className="mt-8 max-w-2xl text-zinc-300 leading-8">
-            {trainer.bio}
-          </p>
-
-          <div className="mt-8 flex flex-wrap gap-3">
-            {trainer.tags.map((tag) => (
-              <span
-                key={tag}
-                className="
-                    rounded-full
-                    border
-                    border-white/10
-                    bg-white/[0.04]
-                    px-5
-                    py-3
-                    text-sm
-                    text-zinc-200
-                    transition-colors
-                    hover:bg-white/[0.08]
-                "
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-
-          <div
-            className="
-            mt-8
-            border-l-2
-            border-white/15
-            pl-5
-            text-zinc-300
+            lg:order-2
           "
-          >
-            Featured reel theme: staying locked in with a gym-edit
-            motivation push and sharper training plan.
-          </div>
-
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/"
-              className="
-                inline-flex
-                items-center
-                gap-2
-                rounded-2xl
-                bg-white
-                px-6
-                py-4
-                font-semibold
-                text-black
-                transition-all
-                duration-300
-                hover:bg-zinc-200
-                hover:scale-[1.03]
-                "
-            >
-              <FaInstagram size={18} />
-              Instagram Profile
-            </Link>
-
-            <Link
-              href="/"
-              className="
-                inline-flex
-                items-center
-                gap-2
-                rounded-2xl
-                border
-                border-white/10
-                bg-white/[0.02]
-                px-6
-                py-4
-                text-white
-                transition-all
-                duration-300
-                hover:bg-white/[0.06]
-                "
-            >
-              Reel
-              <ExternalLink size={18} />
-            </Link>
-          </div>
-        </div>
-
-        {/* RIGHT */}
-
-        <div className="order-1 lg:order-2 flex justify-center">
+        >
           <div
             className="
-            relative
-            aspect-[9/16]
-            w-full
-            max-w-[360px]
-            overflow-hidden
-            rounded-[34px]
-            border
-            border-white/10
-            bg-linear-to-b from-[#181818] to-[#050505]
-            shadow-2xl
+              relative
+              aspect-[9/16]
+              w-[min(100%,280px)]
+              overflow-hidden
+              rounded-[24px]
+              border border-white/10
+              bg-linear-to-b from-[#181818] to-[#050505]
+              shadow-2xl
+
+              sm:w-[min(100%,320px)]
+              sm:rounded-[30px]
+
+              lg:max-w-[360px]
+              lg:rounded-[34px]
             "
           >
             <video
@@ -180,17 +107,321 @@ export default function TrainerCard({
               playsInline
             />
 
-            <div className="absolute left-4 top-4 rounded-full bg-black/60 px-4 py-2 text-white backdrop-blur-xl">
+            {/* Featured label */}
+            <div
+              className="
+                absolute
+                left-3
+                top-3
+                max-w-[calc(100%-60px)]
+                rounded-full
+                bg-black/60
+                px-3
+                py-1.5
+                text-xs
+                text-white
+                backdrop-blur-xl
+
+                sm:left-4
+                sm:top-4
+                sm:px-4
+                sm:py-2
+                sm:text-sm
+              "
+            >
               Featured Reel
             </div>
 
-            <button className="absolute right-4 top-4 rounded-full bg-black/60 p-3 backdrop-blur-xl">
-              <Volume2 size={18} />
+            {/* Volume */}
+            <button
+              type="button"
+              aria-label="Toggle video sound"
+              className="
+                absolute
+                right-3
+                top-3
+                rounded-full
+                bg-black/60
+                p-2.5
+                text-white
+                backdrop-blur-xl
+
+                sm:right-4
+                sm:top-4
+                sm:p-3
+              "
+            >
+              <Volume2 size={17} />
             </button>
 
-            <div className="absolute bottom-5 left-5 rounded-full bg-black/60 px-4 py-2 text-white backdrop-blur-xl">
+            {/* Stats */}
+            <div
+              className="
+                absolute
+                bottom-3
+                left-3
+                max-w-[calc(100%-24px)]
+                truncate
+                rounded-full
+                bg-black/60
+                px-3
+                py-1.5
+                text-xs
+                text-white
+                backdrop-blur-xl
+
+                sm:bottom-5
+                sm:left-5
+                sm:px-4
+                sm:py-2
+                sm:text-sm
+              "
+            >
               {trainer.followers}+ followers • {trainer.posts}+ posts
             </div>
+          </div>
+        </div>
+
+        {/* LEFT / CONTENT */}
+
+        <div
+          className="
+            order-2
+            min-w-0
+
+            lg:order-1
+          "
+        >
+          {/* Role */}
+          <p
+            className="
+              text-xs
+              font-semibold
+              uppercase
+              tracking-[0.18em]
+              text-zinc-300
+
+              sm:text-sm
+              sm:tracking-widest
+            "
+          >
+            {trainer.role}
+          </p>
+
+          {/* Avatar + Name */}
+          <div
+            className="
+              mt-4
+              flex
+              min-w-0
+              items-center
+              gap-3
+
+              sm:mt-5
+              sm:gap-4
+            "
+          >
+            <Image
+              src={trainer.avatar}
+              width={84}
+              height={84}
+              alt={trainer.name}
+              className="
+                h-16
+                w-16
+                shrink-0
+                rounded-2xl
+                border
+                border-white/10
+
+                sm:h-[72px]
+                sm:w-[72px]
+                sm:rounded-3xl
+
+                md:h-[84px]
+                md:w-[84px]
+              "
+            />
+
+            <div className="min-w-0">
+              <h2
+                className="
+                  truncate
+                  text-2xl
+                  font-black
+                  leading-tight
+                  text-white
+
+                  sm:text-3xl
+
+                  lg:text-4xl
+                "
+              >
+                {trainer.name}
+              </h2>
+
+              <p
+                className="
+                  mt-0.5
+                  truncate
+                  text-sm
+                  text-zinc-400
+
+                  sm:text-base
+                "
+              >
+                @{trainer.username}
+              </p>
+            </div>
+          </div>
+
+          {/* Bio */}
+          <p
+            className="
+              mt-6
+              text-sm
+              leading-7
+              text-zinc-300
+
+              sm:mt-8
+              sm:text-base
+              sm:leading-8
+            "
+          >
+            {trainer.bio}
+          </p>
+
+          {/* Tags */}
+          <div
+            className="
+              mt-6
+              flex
+              flex-wrap
+              gap-2
+
+              sm:mt-8
+              sm:gap-3
+            "
+          >
+            {trainer.tags.map((tag) => (
+              <span
+                key={tag}
+                className="
+                  rounded-full
+                  border
+                  border-white/10
+                  bg-white/[0.04]
+                  px-3.5
+                  py-2
+                  text-xs
+                  text-zinc-200
+                  transition-colors
+                  hover:bg-white/[0.08]
+
+                  sm:px-5
+                  sm:py-3
+                  sm:text-sm
+                "
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          {/* Featured reel */}
+          <div
+            className="
+              mt-6
+              border-l-2
+              border-white/15
+              pl-4
+              text-sm
+              leading-6
+              text-zinc-300
+
+              sm:mt-8
+              sm:pl-5
+              sm:text-base
+              sm:leading-7
+            "
+          >
+            Featured reel theme: staying locked in with a gym-edit
+            motivation push and sharper training plan.
+          </div>
+
+          {/* Buttons */}
+          <div
+            className="
+              mt-7
+              flex
+              flex-col
+              gap-3
+
+              sm:mt-10
+              sm:flex-row
+              sm:flex-wrap
+              sm:gap-4
+            "
+          >
+            <Link
+              href="/"
+              className="
+                inline-flex
+                w-full
+                items-center
+                justify-center
+                gap-2
+                rounded-2xl
+                bg-white
+                px-5
+                py-3.5
+                text-sm
+                font-semibold
+                text-black
+                transition-all
+                duration-300
+                hover:scale-[1.03]
+                hover:bg-zinc-200
+
+                sm:w-auto
+                sm:px-6
+                sm:py-4
+                sm:text-base
+              "
+            >
+              <FaInstagram size={18} />
+              Instagram Profile
+            </Link>
+
+            <Link
+              href="/"
+              className="
+                inline-flex
+                w-full
+                items-center
+                justify-center
+                gap-2
+                rounded-2xl
+                border
+                border-white/10
+                bg-white/[0.02]
+                px-5
+                py-3.5
+                text-sm
+                text-white
+                transition-all
+                duration-300
+                hover:bg-white/[0.06]
+
+                sm:w-auto
+                sm:px-6
+                sm:py-4
+                sm:text-base
+              "
+            >
+              Reel
+              <ExternalLink size={18} />
+            </Link>
           </div>
         </div>
       </div>

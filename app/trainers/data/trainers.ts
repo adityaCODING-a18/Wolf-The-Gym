@@ -10,7 +10,7 @@ export const trainers: Trainer[] = [
 
     bio: "Sanju takes the nutrition and exercise expert spot with a motivation-heavy reel that fits exercise planning, conditioning support and practical nutrition guidance.",
 
-    avatar: "/trainers/sanu.jpg",
+    avatar: "https://ik.imagekit.io/hvsvyculi/sanju_trainer.jpeg?updatedAt=1787728942203",
 
     reel: "gym edit one.mp4",
 
