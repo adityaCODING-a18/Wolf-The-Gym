@@ -364,7 +364,7 @@ export default function TrainerCard({
             "
           >
             <Link
-              href="/"
+              href={trainer.instagram}
               className="
                 inline-flex
                 w-full
