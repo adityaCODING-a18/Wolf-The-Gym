@@ -31,7 +31,7 @@ export const trainers: Trainer[] = [
   },
 
   {
-    id: 2,
+    id: 2,  
     name: "SANJU_YADAV",
     username: "_sanju_yadvesh",
     role: "Nutrition and Exercise Expert",

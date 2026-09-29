@@ -5,7 +5,7 @@ import Hero from "./Components/Hero";
 import Reels from "./Components/Reels";
 import Services from "./Components/Services";
 import GymInterior from "./Components/GymInterior";
-import CommunityMoments from "./Components/CommunityMoments";
+// import CommunityMoments from "./Components/CommunityMoments";
 import Feedback from "./Components/Feedback";
 import Founder from "./Components/Founder";
 import FAQ from "./Components/FAQ";
@@ -20,7 +20,7 @@ export default function Home() {
       <Reels />
       <Services />
       <GymInterior />
-      <CommunityMoments />
+      {/* <CommunityMoments />  */}
       <Feedback />
       <Founder />
       <FAQ />
